@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;700&family=Yellowtail&display=swap");
+
+* {
+  font-family: "Architects Daughter", cursive;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  a {
+    margin: 0 28px;
+    text-decoration: none;
+    color: #181818;
+    font-size: 60px;
+    font-weight: 600;
+  }
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  .page {
+    position: absolute;
+    .inner {
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-size: 48px;
+        letter-spacing: 0.15rem;
+        .line-wrap {
+          overflow: hidden;
+          height: 70px;
+        }
+      }
+      p {
+        margin-top: 200px;
+        width: 340px;
+        font-weight: 300;
+        line-height: 30px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 600ms;
+}
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+.bg-img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 70%;
+  left: -30%;
+  z-index: -1;
+}
